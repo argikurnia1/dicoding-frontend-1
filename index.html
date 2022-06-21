@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - How to limit your expressJS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <!-- Navbar -->
+    <header class="header-navbar">
+        <nav class="nav-navbar">
+            <div>
+                <a href="#"><img src="/assets/logo.svg" alt="logo"></a>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#profile">
+                        Profile
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contacts">
+                        Contacts
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#prerequisites">
+                        Prerequisites
+                    </a>
+                </li>
+            </ul>
+            <!-- Hamburger Menu -->
+            <div class="hamburger-mobile">
+                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1 0C0.447715 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2V0ZM23 2C23.5523 2 24 1.55228 24 1C24 0.447715 23.5523 0 23 0V2ZM1 2H23V0H1V2Z"
+                        fill="white" />
+                    <path
+                        d="M1 8C0.447715 8 0 8.44772 0 9C0 9.55228 0.447715 10 1 10V8ZM23 10C23.5523 10 24 9.55228 24 9C24 8.44772 23.5523 8 23 8V10ZM1 10H23V8H1V10Z"
+                        fill="white" />
+                    <path
+                        d="M1 16C0.447715 16 0 16.4477 0 17C0 17.5523 0.447715 18 1 18V16ZM23 18C23.5523 18 24 17.5523 24 17C24 16.4477 23.5523 16 23 16V18ZM1 18H23V16H1V18Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Navbar Mobile -->
+    <nav class="nav-navbar__mobile">
+        <div class="navbar-container__mobile">
+            <div class="nav-navbar__row">
+                <!-- Logo -->
+                <div>
+                    <a href="#"><img src="/assets/logo.svg" alt="logo"></a>
+                </div>
+                <!-- Close Menu -->
+                <div class="close">
+                    <svg width="40" height="40" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.78 2.66667C26.2986 2.66667 29.3346 5.83734 29.3346 10.5547V21.4453C29.3346 26.1627 26.2986 29.3333 21.7786 29.3333H10.2213C5.70264 29.3333 2.66797 26.1627 2.66797 21.4453V10.5547C2.66797 5.83734 5.70264 2.66667 10.2213 2.66667H21.78ZM21.78 4.66667H10.2213C6.84797 4.66667 4.66797 6.97734 4.66797 10.5547V21.4453C4.66797 25.0227 6.84797 27.3333 10.2213 27.3333H21.7786C25.1533 27.3333 27.3346 25.0227 27.3346 21.4453V10.5547C27.3346 6.97734 25.1533 4.66667 21.78 4.66667ZM13.5086 12.0835L15.9986 14.5733L18.4873 12.0863C18.878 11.6956 19.51 11.6956 19.9006 12.0863C20.2913 12.4769 20.2913 13.1089 19.9006 13.4996L17.412 15.9867L19.9033 18.4795C20.294 18.8701 20.294 19.5021 19.9033 19.8928C19.7086 20.0888 19.4513 20.1861 19.1966 20.1861C18.9406 20.1861 18.6846 20.0888 18.49 19.8928L15.9986 17.4L13.5113 19.8889C13.3166 20.0849 13.0606 20.1823 12.8046 20.1823C12.5486 20.1823 12.2926 20.0849 12.098 19.8889C11.7073 19.4983 11.7073 18.8663 12.098 18.4756L14.5853 15.9867L12.0953 13.4968C11.7046 13.1061 11.7046 12.4741 12.0953 12.0835C12.4873 11.6928 13.1193 11.6928 13.5086 12.0835Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </div>
+
+            <ul class="nav-list__mobile">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#prerequisites">Prerequisites</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar Mobile end -->
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <article class="blog-info">
+            <div class="blog-info__left">
+                <img src="/assets/me.svg">
+            </div>
+            <div class="blog-info__right">
+                <h4>Argi Kurnia</h4>
+                <div>
+                    <span class="blog-date">Feb 10, 2022</span>
+                    <span class="dot">•</span>
+                    ` <span class="blog-readingtime">3 min read</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Introduction -->
+        <article class="main-article" id="introduction">
+            <section>
+                <header class="header-introduction">
+                    <h1>How To Limit Your API Using Express JS</h1>
+                    <img class="introduction-cover" src="/assets/introduction-cover.jpg" alt="introduction cover">
+                </header>
+            </section>
+            <!-- What is Express Rate Limit? - Term  -->
+            <section class="term">
+                <h2>What is Express Rate Limit?</h2>
+                <p>Basic rate-limiting middleware for Express. Use to limit repeated requests to public APIs and
+                    endpoints such as password
+                    reset.</p>
+            </section>
+            <!-- Prerequisites  -->
+            <section class="prerequisites" id="prerequisites">
+                <h2>Prerequisites</h2>
+                <ol>
+                    <li>A good understanding javascript basics</li>
+                    <li>Understanding how handle requests</li>
+                    <li>Understanding of how to build REST APIs in NodeJS</li>
+                    <li>Understanding middleware in NodeJS</li>
+                </ol>
+            </section>
+        </article>
+
+        <!-- Steps -->
+        <article class="main-article" id="steps">
+            <section>
+                <header class="header-steps">
+                    <h2>What Should I Do?</h2>
+                </header>
+            </section>
+
+            <!-- Installing Packages -->
+            <section class="installing-packages">
+                <h3>Installing Packages</h3>
+                <p>First of all you need to run the command npm init -y and create a default package.json.</p>
+                <img src="/assets/installing-packages.png" alt="installing packages">
+                <p>Then you need to install another packages :</p>
+                <ol>
+                    <li>Express</li>
+                    <li>Express Rate Limit</li>
+                    <li>Nodemon</li>
+                </ol>
+                <code>npm install express express-rate-limit nodemon</code>
+            </section>
+
+            <!-- Setup Express -->
+            <section class="setup-express">
+                <h3>Setup Express</h3>
+                <p>First of all you need to edit package.json to change “scripts”, so following the example below :
+                </p>
+                <code>"scripts": {
+                     "dev": "nodemon server.js",
+                     "start": "node server.js"
+                    },</code>
+                <p>If you run npm run dev you will run development server but if you run npm run start it will run
+                    production
+                    server.</p>
+                <p>Then you need to create file , name your file whatever you want but i always created file with
+                    the name app,js or
+                    server,js. following the example below :</p>
+                <code>// Import express
+                        const express = require("express");
+                        
+                        // Executed express
+                        const app = express();
+                        
+                        const port = process.env.PORT || 3000;
+                        
+                        app.get("/", () => {
+                        return res.send("API");
+                        });
+                        
+                        app.listen(port, () => {
+                        console.log(`App running on port ${port}`);
+                        });
+                    </code>
+            </section>
+
+            <!-- Setup Express Rate Limit -->
+            <section class="setup-limit">
+                <h3>Setup Express Rate Limit</h3>
+                <p>Since we already added the express-rate-limit in the first step we just need to import it, First
+                    we need to import the
+                    express-rate-limit in our code below express import.</p>
+                <code>// Import express
+                    const express = require("express");
+                    // Import express-rate-limit
+                    const rateLimit = require('express-rate-limit');</code>
+                <p>Then we can configure the time box (windowMs) in milliseconds and the maximum number of requests
+                    per IP address (max).</p>
+                <code>/ Import express
+                const express = require("express");
+                const rateLimit = require("express-rate-limit");
+                
+                // Express Limit
+                
+                // Executed express
+                const app = express();
+                
+                const port = process.env.PORT || 3000;
+                
+                // Limit requests from same API
+                const limiter = rateLimit({
+                max: 4, // limit each IP to 4 requests per windowMs
+                windowMs: 2 * 60 * 1000, // 2 minute
+                message: "Too many requests from this IP, please try again in 2 minute!", // it will display when you hit the limit
+                });
+                
+                //middleware use to limit API
+                app.use(limiter);
+                
+                app.get("/", (req, res) => {
+                return res.send("API");
+                });
+                
+                app.listen(port, () => {
+                console.log(`App running on port ${port}`);
+                });</code>
+
+                <p>Default response before we hit the limit.</p>
+                <img src="/assets/default-response.png" alt="default response">
+                <p>After you hit the limit it will display a custom message that you write but i write it Too many
+                    requests from this IP,
+                    please try again in 2 minute!".</p>
+                <img src="/assets/limit-response.png" alt="limit response">
+                <p>Yay! you made it so far!</p>
+            </section>
+        </article>
+
+        <article class="end-article">
+            <div>
+                <h1>Thank You For Reading.</h1>
+                <img src="/assets/end-article.png" alt="end article">
+            </div>
+        </article>
+
+        <aside class="card-container" id="profile">
+            <div class="profile-left">
+                <h3>Let’s Talk with Me! I am open<br />
+                    to discuss <span>your project<span></h3>
+                <form>
+                    <div class="profile-contact">
+                        <input type="text" placeholder="Your email here!">
+                        <button>Contact Me</button>
+                    </div>
+                </form>
+            </div>
+            <div class="profile-right">
+                <h4>Argi Kurnia</h4>
+                <p>Online</p>
+                <img src="/assets/profile-img.svg" alt="profile img">
+                <p>Software Engineer</p>
+                <img src="/assets/decoration-profile.svg" alt="decoration profile">
+            </div>
+        </aside>
+    </main>
+    <!-- Main Content end -->
+
+
+    <!-- Footer Start -->
+    <footer id="contacts">
+        <div class="footer-content">
+            <h2>Get In Touch</h2>
+            <div class="footer-contact">
+                <img src="/assets/linkedin.svg" alt="linkedin">
+                <img src="/assets/github.svg" alt="github">
+                <img src="/assets/email.svg" alt="email">
+            </div>
+            <p>Created by <span class="created">Argi</span> | All Reserved!</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
