@@ -24,7 +24,7 @@
 
 ### 🚀 Project Title
 
-- How to limit your expressJS
+- How to limit your ExpressJS
 
 ## 💻 Tech Stack
 
