@@ -1,14 +1,14 @@
 # Dicoding Submission Frontend - 1
 
-## 👷 Designed and Developed by Argi Kurnia
+## 📌 Overview
 
-## 📝 Criteria Submission
+### 👷 Designed and Developed by Argi Kurnia
+
+### 📝 Criteria Submission
 
 - You can check dicoding website about criteria submission
 
-## 📝 Approved Submission By Dicoding
-
-## 📌 Overview
+### 📝 Approved Submission By Dicoding
 
 ### ⚙ All Script Files
 
